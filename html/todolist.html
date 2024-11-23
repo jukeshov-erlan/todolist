@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="../css/todo.css" />
+  </head>
+  <body>
+    <div class="input-grid">
+      <input
+        type="text"
+        class="js-input"
+        placeholder="write your dutie"
+        onkeydown="keyDown(event);"
+      />
+      <input
+        type="date"
+        class="js-input-date"
+        onkeydown="keyDown(event);"
+      />
+      <button class="js-add-button" onclick="addDutie();">Add</button>
+    </div>
+
+    <div class="display-dutie"></div>
+
+    <script src="../script/todo.js"></script>
+  </body>
+</html>
