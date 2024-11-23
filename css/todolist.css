@@ -1,0 +1,59 @@
+body {
+  font-family: Arial;
+}
+
+.display-dutie,
+.input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.input-grid {
+  margin-bottom: 15px;
+}
+
+.js-input,
+.js-input-date,
+.js-add-button,
+.dutie,
+.dutie-button {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgb(34, 14, 53);
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 5px;
+}
+
+.js-input,
+.js-input-date {
+  background-color: rgb(78, 26, 127);
+}
+
+.js-add-button {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+.dutie-button {
+  background-color: darkred;
+  cursor: pointer;
+  color: white;
+}
+
+.js-input:focus,
+.js-input-date:focus {
+  border: none;
+  outline: none;
+}
+
+.js-input::placeholder {
+  color: white;
+}
+
